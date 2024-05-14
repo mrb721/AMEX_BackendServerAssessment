@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  backendify:
+    build:
+      context: .
+      dockerfile: ../backendify/Dockerfile
+    # environment:
+      # - STATSD_SERVER= 0.0.0.0:8125
+    ports:
+      - "9000:9000"
